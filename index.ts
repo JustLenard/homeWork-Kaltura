@@ -34,7 +34,7 @@ const calcultateRevenue = (rezervations: ParsedData[], targetMonth: string) => {
 			 * If rezervation doesn't start on the first of the month, substract from days reserved
 			 **/
 			if (targetMonthStart < rezervation.startDate) {
-				daysReserved -= rezervation.startDate.getDate()
+				daysReserved -= rezervation.startDate.getDate() - 1
 			}
 			/**
 			 * If rezervation last the whole month, substract from days reserved
@@ -60,6 +60,15 @@ const calcultateRevenue = (rezervations: ParsedData[], targetMonth: string) => {
 
 	return { totalRevenue, totalUnreservedCapacity }
 }
+
+const sampleData = [
+	{
+		capacity: 1,
+		monthlyPrice: 450,
+		startDate: new Date('2014-04-05'),
+		endDate: new Date('2014-04-07'),
+	},
+]
 
 const { totalRevenue, totalUnreservedCapacity } = calcultateRevenue(parsedData, monthToCheck)
 
