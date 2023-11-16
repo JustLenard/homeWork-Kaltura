@@ -1,22 +1,16 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "bundler",
-    "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "composite": true,
-    "strict": true,
-    "downlevelIteration": true,
-    "skipLibCheck": true,
-    "jsx": "react-jsx",
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
-    "types": [
-      "bun-types" // add Bun global
-    ]
-  }
+    "target": "ESNext", // Specify the ECMAScript version to target
+    "module": "ESNext", // Use ESM (ESNext) for module system
+    "outDir": "build", // Output directory for compiled files
+    "rootDir": "./src", // Root directory for your source files
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Allows importing CommonJS modules with ESM
+    "resolveJsonModule": true, // Enable importing JSON files as modules
+    "moduleResolution": "node", // Use Node.js module resolution strategy
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "strictNullChecks": false
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts"],
+  "exclude": ["node_modules"]
 }

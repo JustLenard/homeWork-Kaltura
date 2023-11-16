@@ -17,17 +17,29 @@
 3. **Install dependencies:**
 
     ```bash
-    bun install
+    npm i
     ```
 
-4. **Run script:**
+4. **Build app:**
 
     ```bash
-    bun index.ts
+    npm run build
     ```
 
-5. **Alternatively, use a date argument (YYYY-MM) when running the script:**
+5. **(Optional) Run watch mode:**
 
     ```bash
-    bun index.ts 2018-01
+    npm run build:watch
+    ```
+
+6. **Run script:**
+
+    ```bash
+    npm start
+    ```
+
+7. **Alternatively, use a date argument (YYYY-MM) when running the script:**
+
+    ```bash
+    npm start 2018-01
     ```
