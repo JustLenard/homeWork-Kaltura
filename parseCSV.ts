@@ -1,4 +1,4 @@
-import { ParsedData, RawJson } from './types'
+import { ParsedData, RawJson, Headers } from './types'
 
 const fs = require('fs')
 const csv = require('csv-parser')
@@ -10,10 +10,12 @@ export const parseCSV = async (fileName = 'data.csv') => {
 	return new Promise<ParsedData[]>((resolve, reject) => {
 		const results: ParsedData[] = []
 
+		const headersArray: Headers[] = ['capacity', 'monthlyPrice', 'startDate', 'endDate']
+
 		fs.createReadStream(fileName)
 			.pipe(
 				csv({
-					headers: ['capacity', 'monthlyPrice', 'startDate', 'endDate'],
+					headers: headersArray,
 					skipLines: 1,
 				})
 			)

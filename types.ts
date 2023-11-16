@@ -1,6 +1,6 @@
-export type Rows = 'capacity' | 'monthlyPrice' | 'startDate' | 'endDate'
+export type Headers = 'capacity' | 'monthlyPrice' | 'startDate' | 'endDate'
 
-export type RawJson = Record<Rows, string>
+export type RawJson = Record<Headers, string>
 
 export type ParsedData = {
 	capacity: number

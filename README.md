@@ -8,7 +8,7 @@
     https://github.com/JustLenard/homeWork-Kaltura.git
     ```
 
-2. **Change directory to client:**
+2. **Change directory to project:**
 
     ```bash
     cd homeWork-Kaltura
