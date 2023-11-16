@@ -37,14 +37,14 @@ const calcultateRevenue = (rezervations: ParsedData[], targetMonth: string) => {
 				daysReserved -= rezervation.startDate.getDate() - 1
 			}
 			/**
-			 * If rezervation last the whole month, substract from days reserved
+			 * If rezervation doesn't last the whole month, substract from days reserved
 			 **/
 			if (rezervation.endDate <= targetMonthEnd) {
 				daysReserved -= daysInMonth - rezervation.endDate.getDate()
 			}
 
 			/**
-			 * Calcultae revenue based on reserved days in the month
+			 * Calculate revenue based on the amount of reserved days
 			 **/
 			if (daysReserved === daysInMonth) {
 				totalRevenue += rezervation.monthlyPrice
