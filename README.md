@@ -1,15 +1,33 @@
-# home-assigment
+# Home-assigment
 
-To install dependencies:
+## How to run
 
-```bash
-bun install
-```
+1. **Clone the repository:**
 
-To run:
+    ```bash
+    https://github.com/JustLenard/homeWork-Kaltura.git
+    ```
 
-```bash
-bun run index.ts
-```
+2. **Change directory to client:**
 
-This project was created using `bun init` in bun v1.0.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+    ```bash
+    cd homeWork-Kaltura
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    bun install
+    ```
+
+4. **Run script:**
+
+    ```bash
+    bun index.ts
+    ```
+
+5. **Alternatively, use a date argument (YYYY-MM) when running the script:**
+
+    ```bash
+    bun index.ts 2018-01
+    ```

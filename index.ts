@@ -2,9 +2,9 @@ import { parseCSV } from './parseCSV'
 import { ParsedData } from './types'
 import { getDaysInMonth } from './utils'
 
-const args: string | undefined = process.argv[2]
+const consoleArg: string | undefined = process.argv[2]
 
-const monthToCheck = args ?? '2018-01'
+const monthToCheck = consoleArg ?? '2018-01'
 const parsedData: ParsedData[] = await parseCSV()
 
 const calcultateRevenue = (rezervations: ParsedData[], targetMonth: string) => {
