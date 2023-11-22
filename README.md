@@ -5,7 +5,7 @@
 1. **Clone the repository:**
 
     ```bash
-    https://github.com/JustLenard/homeWork-Kaltura.git
+    git clone https://github.com/JustLenard/homeWork-Kaltura.git
     ```
 
 2. **Change directory to project:**
